@@ -25,25 +25,54 @@ li > a {
 
 /***--- /Generics ---***/
 
-/***--- CONTENT ---***/
+/******************** CONTENT 
+****************************/
 
 /***+ SCROLLBAR +***/
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 0px;
 }
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(transparent, #00c6ff);
-  border-radius: 6px;
+
+@media screen and (min-width: 768px) {
+  .container-mobile-max {
+    width: calc(100vw - 12px); /* 12px sono la scrollbar! */
+  }
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #00c6ff);
+    border-radius: 6px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, hsl(244deg 60% 73%));
+  }
 }
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(transparent, hsl(244deg 60% 73%));
-}
+
 /***+ SCROLLBAR +***/
 
 /********************* 
  HEADER 
  *********************/
+
+header {
+  background-color: hsl(209deg 100% 50%);
+  padding: 0 2%;
+  color: #fff;
+}
+header > img[src="img/logo.png"] {
+  height: 60%;
+}
+
+nav .fa-solid.fa-bars {
+  font-size: xx-large;
+  color: #fff;
+}
+nav > button {
+  background-color: inherit;
+  border: 0;
+}
 
 /*********************  
 /HEADER

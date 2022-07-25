@@ -1,0 +1,380 @@
+/****** CONTAINER ******/
+.container-mobile-max {
+  width: 100vw;
+}
+
+.container-max {
+  width: calc(100vw - 12px); /* 12px sono la scrollbar! */
+}
+
+.container-80vw {
+  width: 80vw;
+  margin: auto;
+}
+
+.container-70vw {
+  width: 70vw;
+  margin: auto;
+}
+/****** /CONTAINER ******/
+
+/***** display *****/
+.inherit {
+  display: inherit;
+}
+.initial {
+  display: initial;
+}
+.inline {
+  display: inline;
+}
+.inline-block {
+  display: inline-block;
+}
+.block {
+  display: block;
+}
+.none {
+  display: none;
+}
+/* flex */
+.flex {
+  display: flex;
+}
+.inline-flex {
+  display: inline-flex;
+  /* Displays an element as an inline-level flex container */
+}
+/* flex */
+/* grid */
+.grid {
+  display: grid;
+}
+/* grid */
+
+.list-item {
+  display: list-item;
+}
+
+/* table */
+
+.table {
+  display: table;
+}
+
+.table-caption {
+  display: table-caption;
+}
+.table-column-group {
+  display: table-column-group;
+}
+.table-header-group {
+  display: table-header-group;
+}
+.table-footer-group {
+  display: table-footer-group;
+}
+.table-row-group {
+  display: table-row-group;
+}
+.table-cell {
+  display: table-cell;
+}
+.table-column {
+  display: table-column;
+}
+.table-row {
+  display: table-row;
+}
+/* /table */
+
+.contents {
+  display: contents;
+  /* Makes the container disappear, making the child elements children of the element the next level up in the DOM */
+}
+.run-in {
+  display: run-in;
+  /* Displays an element as either block or inline, depending on context */
+  /* in che senso a seconda del caso? */
+}
+/* ++DA APPROFONDIRE++ */
+.-webkit-inline-flex {
+  display: -webkit-inline-flex;
+  /* sembra esiste una versione ufficiale e questa.. quali sono le differenze? */
+}
+
+/* degli inline-grid esistono queste due versioni non ufficiali */
+.-moz-inline-grid {
+  display: -moz-inline-grid;
+}
+.-ms-inline-grid {
+  display: -ms-inline-grid;
+}
+
+/* --DA APPROFONDIRE-- */
+
+/***** display *****/
+
+/***** flex *****/
+
+.flex-1 {
+  flex: 1;
+  /* questa proprietà con questo valore 1, indipendentemente dal contenuto, divide i contenitori in parti uguali facendoli occupare tutto in contenitore, può averne 3 i quali corrispondono in sequenza a f-grow f-shrink e f-basis (in questo caso 1 da solo corrisponde a "1 0 auto")*/
+}
+
+/** flex-direction **/
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.column-reverse {
+  flex-direction: column-reverse;
+}
+
+/** /flex-direction **/
+
+/** wrap **/
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+/** /wrap **/
+
+/** justify-content **/
+
+.j-start {
+  justify-content: flex-start;
+}
+.j-center {
+  justify-content: center;
+}
+.j-end {
+  justify-content: flex-end;
+}
+.j-left {
+  justify-content: left;
+}
+.j-right {
+  justify-content: right;
+}
+.j-between {
+  justify-content: space-between;
+}
+
+.j-around {
+  justify-content: space-around;
+}
+
+.j-evenly {
+  /* !! is NOT supported by all browser*/
+  justify-content: space-evenly;
+}
+
+.j-baseline {
+  justify-content: baseline;
+}
+
+.j-first-baseline {
+  justify-content: first baseline;
+}
+
+.j-last-baseline {
+  justify-content: last baseline;
+}
+.j-stretch {
+  /* !! NOT supported by flexible boxes (flexbox). */
+  justify-content: stretch;
+}
+
+/** /justify-content **/
+
+/** align-items **/
+.al-it-start {
+  align-items: flex-start;
+}
+.al-it-end {
+  align-items: flex-end;
+}
+.al-it-center {
+  align-items: center;
+}
+.al-it-baseline {
+  align-items: baseline;
+}
+.al-it-stretch {
+  align-items: stretch;
+}
+/** /align-items **/
+
+/** align-content **/
+.al-cont-start {
+  align-content: flex-start;
+}
+.al-cont-between {
+  align-content: space-between;
+}
+.al-cont-end {
+  align-content: flex-end;
+}
+.al-cont-around {
+  align-content: space-around;
+}
+
+.al-cont-stretch {
+  align-content: stretch;
+}
+/** align-content **/
+
+/** align-self **/
+
+.self-start {
+  align-self: flex-start;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.self-baseline {
+  align-self: baseline;
+}
+
+.self-stretch {
+  align-self: stretch;
+}
+
+/** /align-self **/
+
+/** flex-shrink **/
+.shrink0 {
+  flex-shrink: 0;
+}
+.shrink1 {
+  flex-shrink: 1;
+}
+.shrink2 {
+  flex-shrink: 2;
+}
+
+/** flex-shrink **/
+
+/** flex-grow **/
+
+.grow1 {
+  flex-grow: 1;
+}
+.grow2 {
+  flex-grow: 2;
+}
+
+/** /flex-grow **/
+
+/** flex-basis **/
+
+.base30 {
+  flex-basis: 30%;
+}
+
+/** flex-basis **/
+
+/***** /flex *****/
+
+/* position */
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+.position-center-x {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.position-center {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top-45px {
+  top: 45px;
+}
+/* padding */
+
+.pad-30px {
+  padding: 30px;
+}
+.pad-60px-0 {
+  padding: 60px 0;
+}
+.pad-bot-60px {
+  padding-bottom: 60px;
+}
+.pad-top-60px {
+  padding-top: 60px;
+}
+/* /padding */
+
+/* gap */
+
+.gap-10px {
+  gap: 10px;
+}
+.gap-20px {
+  gap: 20px;
+}
+.gap-30px {
+  gap: 30px;
+}
+.gap-40px {
+  gap: 40px;
+}
+.gap-50px {
+  gap: 50px;
+}
+.gap-60px {
+  gap: 60px;
+}
+
+/* gap */
+
+.green {
+  color: rgb(3, 202, 3);
+}
+.float-sx {
+  float: left;
+}
+.float-dx {
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.width40 {
+  width: 40%;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/***** /UTILITIES *****/
