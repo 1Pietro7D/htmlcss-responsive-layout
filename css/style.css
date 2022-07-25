@@ -1,0 +1,66 @@
+/***--- Generics ---***/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* /reset */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "PT Sans", sans-serif, "Fredoka One", cursive;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li > a {
+  text-decoration: none;
+}
+
+/***--- /Generics ---***/
+
+/***--- CONTENT ---***/
+
+/***+ SCROLLBAR +***/
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #00c6ff);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, hsl(244deg 60% 73%));
+}
+/***+ SCROLLBAR +***/
+
+/********************* 
+ HEADER 
+ *********************/
+
+/*********************  
+/HEADER
+*********************/
+
+/********************* 
+ MAIN 
+ *********************/
+
+/********************* 
+ /MAIN 
+ *********************/
+
+/********************* <
+ FOOTER 
+ *********************/
+
+/********************* 
+ /FOOTER 
+ *********************/
