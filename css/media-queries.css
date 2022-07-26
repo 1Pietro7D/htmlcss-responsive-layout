@@ -12,6 +12,25 @@
   ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(transparent, hsl(244deg 60% 73%));
   }
+  img[src="img/phone.png"] {
+    width: 50%;
+  }
+  #product-presentation > .flex.column {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #product-presentation .contenitor {
+    width: calc(100% / 3);
+    padding: 20px;
+  }
+
+  #product-presentation .contenitor:first-child {
+    width: calc(100% / 3 * 2);
+  }
+  section .container {
+    max-width: 1200px;
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -27,5 +46,11 @@
   }
   nav .btn {
     display: inline;
+  }
+  #product-presentation .cards:first-child {
+    flex-direction: row;
+  }
+  #product-presentation .cards {
+    padding: 40px;
   }
 }
