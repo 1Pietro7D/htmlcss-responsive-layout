@@ -36,9 +36,9 @@
     max-width: 1200px;
     margin: auto;
   }
-  /* #planning .initial {
-    width: 40%;
-  } */
+  #product-presentation .cards > i {
+    font-size: 3em;
+  }
 }
 /********** min768px************/
 
@@ -79,6 +79,12 @@
   #planning > div:only-child {
     flex-direction: row;
     max-width: 900px;
+  }
+  .cards#app-dev {
+    padding: 40px;
+  }
+  #planning #app-dev > img {
+    width: 70%;
   }
   /* planning */
 }

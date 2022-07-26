@@ -18,10 +18,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/utilities.css" />
+
     <link rel="stylesheet" href="css/debug.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media-queries.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
     <title>Responsive layout</title>
   </head>
   <body>
@@ -34,12 +35,18 @@
         <a href="#" class="not"><img src="img/logo.png" alt="logo" /></a>
         <div class="flex" id="menu">
           <ul class="gap-20px none" id="nav-li">
-            <li class="none"><a class="none" href="#"> plannig </a></li>
-            <li class="none"><a class="none" href="#"> testimonials</a></li>
-            <li class="none"><a class="none" href="#"> features </a></li>
-            <li class="none"><a class="none" href="#"> about us </a></li>
+            <li class="none"><a class="none" href="#planning"> plannig </a></li>
+            <li class="none">
+              <a class="none" href="#testimonials"> testimonials</a>
+            </li>
+            <li class="none">
+              <a class="none" href="#features"> features </a>
+            </li>
+            <li class="none">
+              <a class="none" href="#about-us"> about us </a>
+            </li>
             <li class="none not">
-              <a class="none btn" href="#"> get started </a>
+              <a class="none btn" href="#get-started"> get started </a>
             </li>
           </ul>
           <button
@@ -143,9 +150,9 @@
         </div>
       </section>
       <section class="container-mobile-max" id="planning">
-        <div class="flex container contenitor column">
-          <div class="cards inherit">
-            <img src="img/planning1.png" alt="" />
+        <div class="flex container contenitor column gap-50px">
+          <div class="cards flex-1 gap-60px">
+            <img src="img/planning1.png" alt="strategic planning" />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Reprehenderit, odio excepturi labore dolorem aliquam et itaque
@@ -153,9 +160,9 @@
               adipisci aliquid soluta, molestiae quaerat impedit!
             </p>
           </div>
-          <div class="self-end">
-            <div class="cards initial">
-              <img src="img/planning2.png" alt="" />
+          <div class="self-end flex-1">
+            <div class="cards al-it-center" id="app-dev">
+              <img src="img/planning2.png" alt="App development" />
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Repellat vero cupiditate labore eius dolore. Repellendus eius
@@ -172,7 +179,7 @@
       <section class="container-mobile-max" id="features">
         <div class="flex contenitor column"></div>
       </section>
-      <section class="container-mobile-max" id="abaut-us">
+      <section class="container-mobile-max" id="about-us">
         <div class="flex contenitor column"></div>
       </section>
       <section class="container-mobile-max" id="get-started">

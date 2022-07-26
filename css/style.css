@@ -1,3 +1,5 @@
+/* VARIABLE */
+
 /***--- Generics ---***/
 
 * {
@@ -100,6 +102,7 @@ section:nth-of-type(2n + 1) {
   gap: 20px;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 .contenitor {
   padding: 20px;
@@ -109,15 +112,12 @@ section:nth-of-type(2n + 1) {
 
 #product-presentation .cards {
   background-color: #b5ddff;
-  text-align: center;
 }
-#product-presentation .principal {
+#product-presentation .principal.text-left {
   padding-bottom: 0 !important;
-}
-
-#product-presentation .text-left {
   text-align: left !important;
 }
+
 #product-presentation .cards > i {
   font-size: 5em;
   color: #0084fd;
@@ -139,7 +139,7 @@ section:nth-of-type(2n + 1) {
 #planning img {
   width: 100%;
 }
-#planning .initial {
+#planning #app-dev {
   background-color: #fff;
 }
 
