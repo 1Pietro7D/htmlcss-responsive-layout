@@ -19,10 +19,13 @@
     display: none;
   }
   #nav-li,
-  #nav-li > li {
+  #nav-li > li:not(.not) {
     display: flex;
   }
   nav .none {
     display: inline-block;
+  }
+  nav .btn {
+    display: inline;
   }
 }

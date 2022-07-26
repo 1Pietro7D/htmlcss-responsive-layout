@@ -65,11 +65,10 @@ nav button {
 
 header li a {
   text-transform: capitalize;
-  display: inline-block;
   color: #fff;
 }
 
-header nav a:not(.not):hover {
+header nav a:not(.btn):hover {
   border-bottom: 1px solid #fff;
 }
 
@@ -80,6 +79,10 @@ header nav a:not(.not):hover {
 /********************* 
  MAIN 
  *********************/
+
+main {
+  padding-top: 60px;
+}
 
 /********************* 
  /MAIN 
@@ -92,3 +95,15 @@ header nav a:not(.not):hover {
 /********************* 
  /FOOTER 
  *********************/
+
+/********
+shared
+*********/
+
+.btn {
+  color: black;
+  padding: 6px;
+  border-radius: 100px;
+  background-color: #fff;
+  border: 1px solid;
+}
