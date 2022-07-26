@@ -82,6 +82,7 @@ header nav li a:not(.btn):hover {
 
 main {
   padding-top: 60px;
+  /* font-size: small; */
 }
 
 section:nth-of-type(2n + 0) {
@@ -91,26 +92,55 @@ section:nth-of-type(2n + 0) {
 section:nth-of-type(2n + 1) {
   margin-bottom: 3%;
 }
-#product-presentation .contenitor {
-  padding: 0 10px;
-}
-#product-presentation .cards {
-  background-color: #b5ddff;
-}
-#product-presentation .cards:first-child {
-  padding-bottom: 0;
-}
+
 .cards {
+  width: 100%;
   border-radius: 25px;
   text-align: center;
   display: flex;
   flex-direction: column;
   padding: 10px;
+  gap: 20px;
 }
-.text-left {
-  text-align: left;
+.contenitor {
+  padding: 20px;
 }
 
+/****** #PRODUCT-PRESENTATION SECTION  *****/
+
+#product-presentation .cards {
+  background-color: #b5ddff;
+}
+#product-presentation .principal {
+  padding-bottom: 0 !important;
+}
+
+#product-presentation .text-left {
+  text-align: left !important;
+}
+#product-presentation .cards > i {
+  font-size: 5em;
+  color: #0084fd;
+}
+#product-presentation .cards h1,
+#product-presentation .cards h2 {
+  color: #0084fd;
+}
+#product-presentation .cards p {
+  color: #5a6e7f;
+}
+/****** /#PRODUCT-PRESENTATION SECTION  *****/
+
+/****** #PLANNING SECTION *****/
+
+#planning img {
+  width: 100%;
+}
+#planning .initial {
+  background-color: #fff;
+}
+
+/****** /#PLANNING SECTION *****/
 /********************* 
  /MAIN 
  *********************/

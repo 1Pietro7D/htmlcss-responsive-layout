@@ -1,4 +1,7 @@
 @media screen and (min-width: 480px) {
+  main {
+    font-size: medium;
+  }
   .container-mobile-max {
     width: calc(100vw - 12px); /* 12px sono la scrollbar! */
   }
@@ -14,11 +17,13 @@
   }
   img[src="img/phone.png"] {
     width: 50%;
+    height: auto;
   }
   #product-presentation > .flex.column {
     flex-direction: row;
     flex-wrap: wrap;
   }
+
   #product-presentation .contenitor {
     width: calc(100% / 3);
     padding: 20px;
@@ -37,6 +42,10 @@
   nav button > i::before {
     display: none;
   }
+  img[src="img/phone.png"] {
+    width: 50%;
+    height: auto;
+  }
   #nav-li,
   #nav-li > li:not(.not) {
     display: flex;
@@ -47,10 +56,28 @@
   nav .btn {
     display: inline;
   }
-  #product-presentation .cards:first-child {
+  #product-presentation .principal {
     flex-direction: row;
   }
   #product-presentation .cards {
     padding: 40px;
+  }
+}
+@media screen and (min-width: 900px) {
+  img[src="img/phone.png"] {
+    width: 40%;
+    height: auto;
+  }
+  #primal {
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    font-size: larger;
+  }
+  #primal {
+    gap: 60px;
   }
 }
