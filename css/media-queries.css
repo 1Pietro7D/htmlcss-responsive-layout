@@ -4,7 +4,7 @@
     font-size: medium;
   }
   .container-mobile-max {
-    width: calc(100vw - 12px); /* 12px sono la scrollbar! */
+    width: calc(100vw - 12px) !important; /* 12px sono la scrollbar! */
   }
   ::-webkit-scrollbar {
     width: 12px;
@@ -32,12 +32,12 @@
   #product-presentation .contenitor:first-child {
     width: calc(100% / 3 * 2);
   }
-  section .container {
-    max-width: 1200px;
-    margin: auto;
+  #testimonials .cards {
+    flex-direction: row;
   }
-  #product-presentation .cards > i {
-    font-size: 3em;
+  section .container {
+    max-width: 1000px;
+    margin: auto;
   }
 }
 /********** min768px************/
@@ -101,7 +101,7 @@
 
 @media screen and (min-width: 1200px) {
   main {
-    font-size: larger;
+    font-size: large;
   }
   /* product-presentation */
   #primal {

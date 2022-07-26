@@ -1,4 +1,7 @@
 /* VARIABLE */
+:root {
+  --principal-color: #9792e4;
+}
 
 /***--- Generics ---***/
 
@@ -88,9 +91,10 @@ main {
 }
 
 section:nth-of-type(2n + 0) {
-  background-color: #9792e4;
+  background-color: var(--principal-color);
   padding: 2% 0;
 }
+
 section:nth-of-type(2n + 1) {
   margin-bottom: 3%;
 }
@@ -144,6 +148,32 @@ section:nth-of-type(2n + 1) {
 }
 
 /****** /#PLANNING SECTION *****/
+
+/****** TESTIMONIALS SECTION *****/
+#testimonials .cards {
+  background-color: var(--principal-color);
+  color: #fff;
+  text-align: left !important;
+  padding: 15px;
+}
+
+#testimonials img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  clip-path: circle(
+    50%
+  ); /* clip-path si chiede quale sia il suo raggio sul piano orizzontale e non vertivale, in un quadrato o un rettangolo dai lati verticali più lunghi, basterebbe un 50% (il 50% della lunghezza del poligono è il raggio del cerchio), invece avendo la base più lunga nel rettangolo dobbiamo regolarci rapportandoci all'asse y  */
+}
+
+#testimonials .cards p::before {
+  content: open-quote;
+}
+#testimonials .cards p::after {
+  content: close-quote;
+}
+/****** /TESTIMONIALS SECTION *****/
+
 /********************* 
  /MAIN 
  *********************/

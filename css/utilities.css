@@ -388,3 +388,6 @@
 .z1 {
   z-index: 1;
 }
+.text-center {
+  text-align: center;
+}
