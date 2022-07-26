@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/utilities.css" />
     <link rel="stylesheet" href="css/debug.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
     <title>Responsive layout</title>
   </head>
   <body>
@@ -28,17 +29,25 @@
     HEADER 
     ---------->
 
-    <header class="fixed flex j-between al-it-center container-mobile-max">
-      <img src="img/logo.png" alt="logo" />
-      <nav class="flex">
-        <button class="flex"><i class="fa-solid fa-bars"></i></button>
-        <ul class="flex">
-          <li class="none"></li>
-          <li class="none"></li>
-          <li class="none"></li>
-          <li class="none"></li>
-          <li class="none"></li>
-        </ul>
+    <header class="fixed container-mobile-max">
+      <nav class="flex j-between">
+        <a href="#" class="not"><img src="img/logo.png" alt="logo" /></a>
+        <div class="flex">
+          <ul class="gap-20px none" id="nav-li">
+            <li class="none"><a class="none" href="#"> plannig </a></li>
+            <li class="none"><a class="none" href="#"> testimonials</a></li>
+            <li class="none"><a class="none" href="#"> features </a></li>
+            <li class="none"><a class="none" href="#"> about us </a></li>
+            <li class="none"><a class="none not" href="#"> get started </a></li>
+          </ul>
+          <button
+            type="button"
+            class="flex al-it-center"
+            onclick="alert('wait for navigation bar')"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
       </nav>
     </header>
     <!---------- 

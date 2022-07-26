@@ -1,0 +1,28 @@
+@media screen and (min-width: 480px) {
+  .container-mobile-max {
+    width: calc(100vw - 12px); /* 12px sono la scrollbar! */
+  }
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #00c6ff);
+    border-radius: 6px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, hsl(244deg 60% 73%));
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav button > i::before {
+    display: none;
+  }
+  #nav-li,
+  #nav-li > li {
+    display: flex;
+  }
+  nav .none {
+    display: inline-block;
+  }
+}
