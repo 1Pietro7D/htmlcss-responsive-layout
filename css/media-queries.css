@@ -81,7 +81,7 @@
     max-width: 900px;
   }
   .cards#app-dev {
-    padding: 40px;
+    padding: 40px 20px;
   }
   #planning #app-dev > img {
     width: 70%;
@@ -108,4 +108,17 @@
     gap: 60px;
   }
   /* /product-presentation */
+}
+
+/**** separate queries *****/
+
+@media screen and (min-width: 480px) {
+  #features .grid {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  #features .grid {
+    grid-template-columns: auto auto auto;
+  }
 }
