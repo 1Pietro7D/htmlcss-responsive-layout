@@ -116,7 +116,15 @@
   #features .grid {
     grid-template-columns: auto auto;
   }
+  #about-us .grid {
+    grid-template-columns: auto auto auto;
+  }
+  #about-card {
+    grid-area: 1 / 2;
+    max-width: 220px;
+  }
 }
+
 @media screen and (min-width: 768px) {
   #features .grid {
     grid-template-columns: auto auto auto;

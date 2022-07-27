@@ -172,6 +172,10 @@ section:nth-of-type(2n + 1) {
 #testimonials .cards p::after {
   content: close-quote;
 }
+#testimonials .cards img {
+  align-self: center;
+}
+
 /****** /TESTIMONIALS SECTION *****/
 
 /****** FEATURES SECTION *****/
@@ -181,6 +185,36 @@ section:nth-of-type(2n + 1) {
 }
 
 /****** /FEATURES SECTION *****/
+
+/****** ABOUT-US SECTION *****/
+
+#about-card img {
+  width: 100%;
+  object-fit: cover;
+  clip-path: circle(50%);
+}
+#about-card {
+  text-align: left;
+  color: var(--principal-color);
+}
+
+.box-img1 {
+  height: 200px;
+  width: 200px;
+  color: var(--principal-color);
+  font-size: 5em;
+  line-height: 60px;
+  /* line-height verticalizza il simbolo,
+   al momento lo fo a mano a tentativi,
+   se vuoi aumentare font-size ricordati di aumentare anche line-height */
+}
+#about-us a i {
+  padding-right: 5px;
+}
+#about-card p::first-letter {
+  font-size: 200%;
+}
+/****** /ABOUT-US SECTION *****/
 
 /********************* 
  /MAIN 
@@ -211,9 +245,13 @@ shared
   padding: 6px 40px;
   border-radius: 100px;
 }
+
 .btn-violet {
   color: #fff;
-  padding: 4px 10px 6px;
+  padding: 4px 10px;
   border-radius: 100px;
   background-color: var(--principal-color);
+}
+.minu {
+  padding-bottom: 6px !important;
 }
