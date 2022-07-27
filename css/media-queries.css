@@ -117,7 +117,7 @@
     grid-template-columns: auto auto;
   }
   #about-us .grid {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
   }
   #about-card {
     grid-area: 1 / 2;
